@@ -1,0 +1,8 @@
+<footer class="container">
+    <p>I am a happy footer</p>
+    <ul>
+        <li *ngFor="let link of links">
+            <a [routerLink]="link.path">{{link.name}}</a>
+        </li>
+    </ul>
+</footer>

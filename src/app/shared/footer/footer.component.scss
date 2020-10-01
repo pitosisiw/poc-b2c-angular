@@ -1,0 +1,20 @@
+@import "~src/styles";
+
+.container {
+  background-color: $color-blue-50;
+  padding: 2 * $space-unit;
+  color: $color-white;
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+     & +li {
+       margin-top: $space-unit;
+     }
+  }
+
+  a {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,21 @@
+@import "~src/styles/index";
+
+:host {
+  @extend %layout-grid;
+}
+
+.search {
+  height: 450px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text {
+  max-width: $layout-max-width;
+  padding: 2 * $space-unit;
+}
+

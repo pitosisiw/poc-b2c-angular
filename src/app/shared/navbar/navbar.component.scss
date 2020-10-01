@@ -1,0 +1,11 @@
+@import "~src/styles";
+
+header {
+  padding: 2*$space-unit;
+  border-bottom: 1px solid $color-grey-50;
+
+  .icon {
+    width: 110px;
+    fill: $color-blue-50;
+  }
+}

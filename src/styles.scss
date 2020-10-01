@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/index";
+
+@font-face {
+  font-family: "Walsheim";
+  font-weight: 500;
+  src: url("/assets/typography/GT-Walsheim-Medium.otf") format("opentype"),
+    url("/assets/typography/GT-Walsheim-Medium.ttf") format("truetype"),
+    url("/assets/typography/GT-Walsheim-Medium.eot") format("embedded-opentype"),
+    url("/assets/typography/GT-Walsheim-Medium.woff") format("woff"),
+    url("/assets/typography/GT-Walsheim-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Walsheim";
+  font-weight: 700;
+  src: url("/assets/typography/GT-Walsheim-Bold.otf") format("opentype"),
+    url("/assets/typography/GT-Walsheim-Bold.ttf") format("truetype"),
+    url("/assets/typography/GT-Walsheim-Bold.eot") format("embedded-opentype"),
+    url("/assets/typography/GT-Walsheim-Bold.woff") format("woff"),
+    url("/assets/typography/GT-Walsheim-Bold.woff2") format("woff2");
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $color-black-100;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  width: 100%;
+}
