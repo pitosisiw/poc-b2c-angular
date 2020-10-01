@@ -1,4 +1,4 @@
-@import "~src/styles/index";
+@import "~src/styles";
 
 :host {
   @extend %layout-grid;
@@ -16,6 +16,6 @@
 
 .text {
   max-width: $layout-max-width;
-  padding: 2 * $space-unit;
+  margin: 0 auto;
+  padding: 8 * $space-unit 2 * $space-unit;
 }
-

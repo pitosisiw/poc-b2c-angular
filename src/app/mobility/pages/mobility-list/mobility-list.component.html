@@ -1,1 +1,19 @@
-<p>mobility-list works!</p>
+<app-navbar>
+  <ng-container role="desktop-middle">
+    <p>See all the bikes available now in {{ currentCity }}</p>
+  </ng-container>
+</app-navbar>
+<main>
+  <section class="list">
+    <ul>
+      <li *ngFor="let product of productList">
+        <a [routerLink]="'./' + product.path">
+          <img [src]="'assets/images/' + product.picture" />
+          <h2>{{ product.name }}</h2>
+          <p>Price: {{ product.price }}</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+<app-footer></app-footer>

@@ -7,17 +7,18 @@ import { MobilityProductComponent } from "./pages/mobility-product/mobility-prod
 
 const routes: Routes = [
   {
+    path: "",
     component: MobilityLayoutComponent,
     children: [
-      { path: "", component: MobilityCitiesComponent },
-      { path: ":city/", component: MobilityListComponent },
+      { path: "", component: MobilityCitiesComponent, pathMatch: "exact" },
+      { path: ":city", component: MobilityListComponent },
       { path: ":city/:product", component: MobilityProductComponent },
     ],
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class MobilityRoutingModule {}

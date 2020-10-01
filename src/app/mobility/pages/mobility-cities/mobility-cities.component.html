@@ -1,1 +1,23 @@
-<p>mobility-cities works!</p>
+<app-navbar>
+  <ng-container role="desktop-middle">
+    <p>Select the city to see the offers</p>
+  </ng-container>
+</app-navbar>
+<main class="main">
+  <img
+    src="assets/images/fr-product-header.jpg"
+    alt="swap image"
+    class="background"
+  />
+  <section class="citySelect">
+    <h1>Select the city:</h1>
+    <ul>
+      <li *ngFor="let city of cities">
+        <a [routerLink]="'./' + city.path">
+          {{ city.name }}
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+<app-footer></app-footer>

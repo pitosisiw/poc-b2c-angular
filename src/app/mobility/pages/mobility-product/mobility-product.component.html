@@ -1,1 +1,19 @@
-<p>mobility-product works!</p>
+<app-navbar>
+  <ng-container role="desktop-middle">
+    <app-navbar-default-links></app-navbar-default-links>
+  </ng-container>
+  <ng-container role="desktop-right">
+    <button class="buy" (click)="buy()">BUY!</button>
+  </ng-container>
+</app-navbar>
+<main>
+  <section class="product">
+    <img [src]="'assets/images/' + product.picture" />
+    <div>
+      <h2>{{ product.name }}</h2>
+      <p>Price: {{ product.price }}</p>
+      <button class="buy" (click)="buy()">BUY!</button>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
