@@ -1,1 +1,1 @@
-<button (click)="buttonClick()">BUY!</button>
+<button (click)="buttonClick()" [ngClass]="['buy', className | async]">BUY!</button>

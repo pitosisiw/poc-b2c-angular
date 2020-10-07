@@ -1,20 +1,22 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core'
+import {BehaviorSubject, Observable} from 'rxjs'
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  selector: "app-button",
+  templateUrl: "./button.component.html",
+  styleUrls: ["./button.component.scss"],
 })
 export class ButtonComponent implements OnInit {
-  @Output() onClick: EventEmitter<any> = new EventEmitter<any>()
+  @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
+  @Input() className: Observable<string>
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 
   buttonClick() {
-    this.onClick.emit()
+    this.onClick.emit();
   }
+
+
 }

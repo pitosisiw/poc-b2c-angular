@@ -1,0 +1,16 @@
+@import "~src/styles";
+
+.buy {
+  margin-left: auto;
+  padding: $space-unit 2 * $space-unit;
+  font-weight: 700;
+  border: $color-blue-50 2px solid;
+}
+
+.green {
+  background-color: $color-green-50;
+}
+
+.blue {
+  background-color: $color-blue-50;
+}

@@ -3,7 +3,7 @@
     <app-navbar-default-links></app-navbar-default-links>
   </ng-container>
   <ng-container role="desktop-right">
-    <button class="buy" (click)="buy()">BUY!</button>
+    <app-button (onClick)="buy()" [className]="sharedState$"></app-button>
   </ng-container>
 </app-navbar>
 <main>
@@ -12,7 +12,7 @@
     <div>
       <h2>{{ product.name }}</h2>
       <p>Price: {{ product.price }}</p>
-      <button class="buy" (click)="buy()">BUY!</button>
+      <app-button (onClick)="buy()" [className]="sharedState$"></app-button>
     </div>
   </section>
 </main>
